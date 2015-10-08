@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( af )
+find_package( OpenCV REQUIRED )
+add_executable( af alignFaces.cpp )
+target_link_libraries( af ${OpenCV_LIBS} )
